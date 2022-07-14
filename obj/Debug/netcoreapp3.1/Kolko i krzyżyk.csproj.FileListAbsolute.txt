@@ -1,0 +1,17 @@
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\bin\Debug\netcoreapp3.1\Kolko i krzyżyk.exe
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\bin\Debug\netcoreapp3.1\Kolko i krzyżyk.deps.json
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\bin\Debug\netcoreapp3.1\Kolko i krzyżyk.runtimeconfig.json
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\bin\Debug\netcoreapp3.1\Kolko i krzyżyk.runtimeconfig.dev.json
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\bin\Debug\netcoreapp3.1\Kolko i krzyżyk.dll
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\bin\Debug\netcoreapp3.1\Kolko i krzyżyk.pdb
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\obj\Debug\netcoreapp3.1\Kolko i krzyżyk.csproj.AssemblyReference.cache
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\obj\Debug\netcoreapp3.1\Kolko_i_krzyżyk.Menu.resources
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\obj\Debug\netcoreapp3.1\Kolko_i_krzyżyk.Plansza.resources
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\obj\Debug\netcoreapp3.1\Kolko i krzyżyk.csproj.GenerateResource.cache
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\obj\Debug\netcoreapp3.1\Kolko i krzyżyk.AssemblyInfoInputs.cache
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\obj\Debug\netcoreapp3.1\Kolko i krzyżyk.AssemblyInfo.cs
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\obj\Debug\netcoreapp3.1\Kolko i krzyżyk.csproj.CoreCompileInputs.cache
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\obj\Debug\netcoreapp3.1\Kolko i krzyżyk.dll
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\obj\Debug\netcoreapp3.1\Kolko i krzyżyk.pdb
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\obj\Debug\netcoreapp3.1\Kolko i krzyżyk.genruntimeconfig.cache
+C:\Users\Dawid\OneDrive\Pulpit\Kolko i krzyzyk\Kolko i krzyżyk\obj\Debug\netcoreapp3.1\Kolko_i_krzyżyk.Properties.Resources.resources
