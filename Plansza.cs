@@ -45,7 +45,7 @@ namespace Kolko_i_krzyżyk
         {
             
             string tmp = ((PictureBox)sender).Name;
-            controlGame.GameType(game, Convert.ToInt32(tmp[tmp.Length - 1]) - 48, (PictureBox)sender, visibleObjects);
+            controlGame.GameType(game, Convert.ToInt32(tmp[tmp.Length - 1]) - 49, (PictureBox)sender, visibleObjects);
 
         }
         private void Restart_Click(object sender, EventArgs e)

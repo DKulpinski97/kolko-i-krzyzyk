@@ -11,8 +11,8 @@ namespace Kolko_i_krzyżyk.Control
     {
         public void GameType(Game game, int field, PictureBox pictureBox, VisibleObjects visibleObjects)
         {
-            
-            if(game.computer==false)
+
+            if (game.computer == false)
             {
                 ControlPlayerVSPlayer(game, field, pictureBox, visibleObjects);
             }
@@ -21,19 +21,29 @@ namespace Kolko_i_krzyżyk.Control
         {
             CheckTheFields checkTheFields = new CheckTheFields();
             ChangeField changeField = new ChangeField();
-            if (game.board[field - 1] == '\0')
+            int[] pozytion = Pozytion(field);
+            if (game.board[pozytion[1],pozytion[0]] == '\0')
             {
                 changeField.ChangeImage(pictureBox, game);
-                changeField.ChangeInformationInBoardOfFields(field, game);
+                changeField.ChangeInformationInBoardOfFields(field, game, pozytion);
                 checkTheFields.CheckColumns(game, visibleObjects);
                 checkTheFields.CheckRow(game, visibleObjects);
+                checkTheFields.CheckCrose(game, visibleObjects);
+                checkTheFields.CheckTie(game, visibleObjects);
             }
             else
             {
                 MessageBox.Show("Nie można urzyć tego pola poniewarz jest one już zajęte");
             }
-                
-            
+
+
         }
+        public int[] Pozytion (int field)
+            {
+            int[] pozytion= new int[2];
+            pozytion[0] = field % 3;
+            pozytion[1] = Convert.ToInt32(field/3);
+            return pozytion;
+            }
     }
 }
