@@ -19,7 +19,7 @@ namespace Kolko_i_krzyżyk
 
         private void PlayerVsPlayer_Click(object sender, EventArgs e)
         {
-            Plansza plansza = new Plansza(true);
+            Plansza plansza = new Plansza(false);
             this.Hide();
             plansza.Show();
             
@@ -28,7 +28,7 @@ namespace Kolko_i_krzyżyk
 
         private void PlayerVsComputer_Click(object sender, EventArgs e)
         {
-            Plansza plansza = new Plansza(false);
+            Plansza plansza = new Plansza(true);
             this.Hide();
             plansza.Show();
             

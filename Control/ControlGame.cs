@@ -10,8 +10,26 @@ namespace Kolko_i_krzyżyk.Control
     {
         public void GameType(Game game, int field, PictureBox pictureBox)
         {
+            
+            if(game.computer==false)
+            {
+                ControlPlayerVSPlayer(game, field, pictureBox);
+            }
+        }
+        public void ControlPlayerVSPlayer(Game game, int field, PictureBox pictureBox)
+        {
             ChangeField changeField = new ChangeField();
-            changeField.ChangeImage(pictureBox, game);
+            if (game.board[field - 1] == '\0')
+            {
+                changeField.ChangeImage(pictureBox, game);
+                changeField.ChangeInformationInBoardOffields(field, game);
+            }
+            else
+            {
+                MessageBox.Show("Nie można urzyć tego pola poniewarz jest one już zajęte");
+            }
+                
+            
         }
     }
 }
