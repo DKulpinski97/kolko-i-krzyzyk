@@ -15,14 +15,20 @@ namespace Kolko_i_krzyżyk
     {
         Game game = new Game();
         ControlGame controlGame = new ControlGame();
+        VisibleObjects visibleObjects = new VisibleObjects();
         public Plansza(bool computer)
         {
             InitializeComponent();
-            //SumaryPlayerOne.Text = game.result[0].ToString();
-            //SumaryPlayerTwo.Text = game.result[1].ToString();
+            priperVisibleObjects();
             game.computer = computer;
         }
-
+        private void priperVisibleObjects()
+        {
+            PictureBox[] allPictureBoxes = { Field1, Field2, Field3, Field4, Field5, Field6, Field7, Field8, Field9 };
+            visibleObjects.pictureBoxes = allPictureBoxes;
+            Label[] labels = { SumaryPlayerOne, SumaryPlayerTwo };
+            visibleObjects.label = labels;
+        }
         private void BackToMenu_Click(object sender, EventArgs e)
         {
             Menu menu = new Menu();
@@ -37,60 +43,15 @@ namespace Kolko_i_krzyżyk
 
         private void Picture_Click(object sender, EventArgs e)
         {
-            if (sender is PictureBox)
-            {
-                //MessageBox.Show("clicked on: " + ((PictureBox)sender).Name);
-            }
+            
             string tmp = ((PictureBox)sender).Name;
-            int a = Convert.ToInt32( tmp[tmp.Length-1]);
-            controlGame.GameType(game, 1, (PictureBox)sender);
+            controlGame.GameType(game, Convert.ToInt32(tmp[tmp.Length - 1]) - 48, (PictureBox)sender, visibleObjects);
 
         }
-/*
-        private void Field2_Click(object sender, EventArgs e)
-        {
-            controlGame.GameType(game, 2, Field2);
-        }
-
-        private void Field3_Click(object sender, EventArgs e)
-        {
-            controlGame.GameType(game, 3, Field3);
-        }
-
-        private void Field4_Click(object sender, EventArgs e)
-        {
-            controlGame.GameType(game, 4, Field4);
-        }
-
-        private void Field5_Click(object sender, EventArgs e)
-        {
-            controlGame.GameType(game, 5, Field5);
-        }
-
-        private void Field6_Click(object sender, EventArgs e)
-        {
-            controlGame.GameType(game, 6, Field6);
-        }
-
-        private void Field7_Click(object sender, EventArgs e)
-        {
-            controlGame.GameType(game, 7, Field7);
-        }
-
-        private void Field8_Click(object sender, EventArgs e)
-        {
-            controlGame.GameType(game, 8, Field8);
-        }
-
-        private void Field9_Click(object sender, EventArgs e)
-        {
-            controlGame.GameType(game, 9, Field9);
-        }
-        */
         private void Restart_Click(object sender, EventArgs e)
         {
             ChangeField changeField = new ChangeField();
-            changeField.RestartFields();
+            changeField.RestartFields(visibleObjects, game);
         }
     }
 }

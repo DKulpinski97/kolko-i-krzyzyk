@@ -36,8 +36,17 @@ namespace Kolko_i_krzyżyk.Control
             }
 
         }
-        public void RestartFields()
+        public void RestartFields(VisibleObjects visibleObjects, Game game)
         {
+            for(int i=0;i<9;i++)
+            {
+                visibleObjects.pictureBoxes[i].Image= System.Drawing.Image.FromFile(@"..\..\..\Picture\Empty.png");
+                game.board[i] = '\0';
+            }
+
+            visibleObjects.label[0].Text = game.result[0].ToString();
+            visibleObjects.label[1].Text = game.result[1].ToString();
+            game.player = false;
 
         }
     }

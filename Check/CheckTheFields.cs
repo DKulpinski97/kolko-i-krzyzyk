@@ -1,13 +1,16 @@
-﻿using Kolko_i_krzyżyk.ObiectGame;
+﻿using Kolko_i_krzyżyk.Control;
+using Kolko_i_krzyżyk.ObiectGame;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Threading;
+using System.Windows.Forms;
 
 namespace Kolko_i_krzyżyk.Check
 {
     class CheckTheFields
     {
-        /*public char CheckColumns(Game game)
+        public void CheckColumns(Game game, VisibleObjects visibleObjects )
         {
             char symbol;
             int tmp = 0;
@@ -26,7 +29,9 @@ namespace Kolko_i_krzyżyk.Check
                     }
                     if(tmp==3)
                     {
-                        int a = 0;
+                        WriteTheWinner(game, symbol);
+                        ChangeField changeField = new ChangeField();
+                        changeField.RestartFields(visibleObjects, game);
                         break;
                     }
                     else
@@ -36,6 +41,20 @@ namespace Kolko_i_krzyżyk.Check
                     }
                 }
             }
-        }*/
+        }
+        private void WriteTheWinner(Game game,char symbol)
+        {
+            if(symbol=='X')
+            {
+                MessageBox.Show("Zwycięscą w meczu jest gracz 1");
+                game.result[0]++;
+            }
+            else
+            {
+                MessageBox.Show("Zwycięscą w meczu jest gracz 2");
+                game.result[1]++;
+            }
+            
+        }
     }
 }
