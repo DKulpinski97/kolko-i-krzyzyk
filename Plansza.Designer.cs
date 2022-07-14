@@ -28,7 +28,7 @@ namespace Kolko_i_krzyżyk
         /// Required method for Designer support - do not modify
         /// the contents of this method with the code editor.
         /// </summary>
-        private void InitializeComponent()
+        public void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Plansza));
             this.BackToMenu = new System.Windows.Forms.Button();
@@ -87,7 +87,7 @@ namespace Kolko_i_krzyżyk
             this.Field1.Size = new System.Drawing.Size(100, 100);
             this.Field1.TabIndex = 2;
             this.Field1.TabStop = false;
-            this.Field1.Click += new System.EventHandler(this.Field1_Click);
+            this.Field1.Click += new System.EventHandler(this.Picture_Click);
             // 
             // Field2
             // 
@@ -97,7 +97,7 @@ namespace Kolko_i_krzyżyk
             this.Field2.Size = new System.Drawing.Size(100, 100);
             this.Field2.TabIndex = 3;
             this.Field2.TabStop = false;
-            this.Field2.Click += new System.EventHandler(this.Field2_Click);
+            this.Field2.Click += new System.EventHandler(this.Picture_Click);
             // 
             // Field3
             // 
@@ -107,7 +107,7 @@ namespace Kolko_i_krzyżyk
             this.Field3.Size = new System.Drawing.Size(100, 100);
             this.Field3.TabIndex = 4;
             this.Field3.TabStop = false;
-            this.Field3.Click += new System.EventHandler(this.Field3_Click);
+            this.Field3.Click += new System.EventHandler(this.Picture_Click);
             // 
             // Field4
             // 
@@ -117,7 +117,7 @@ namespace Kolko_i_krzyżyk
             this.Field4.Size = new System.Drawing.Size(100, 100);
             this.Field4.TabIndex = 5;
             this.Field4.TabStop = false;
-            this.Field4.Click += new System.EventHandler(this.Field4_Click);
+            this.Field4.Click += new System.EventHandler(this.Picture_Click);
             // 
             // Field5
             // 
@@ -127,7 +127,7 @@ namespace Kolko_i_krzyżyk
             this.Field5.Size = new System.Drawing.Size(100, 100);
             this.Field5.TabIndex = 6;
             this.Field5.TabStop = false;
-            this.Field5.Click += new System.EventHandler(this.Field5_Click);
+            this.Field5.Click += new System.EventHandler(this.Picture_Click);
             // 
             // Field6
             // 
@@ -137,7 +137,7 @@ namespace Kolko_i_krzyżyk
             this.Field6.Size = new System.Drawing.Size(100, 100);
             this.Field6.TabIndex = 7;
             this.Field6.TabStop = false;
-            this.Field6.Click += new System.EventHandler(this.Field6_Click);
+            this.Field6.Click += new System.EventHandler(this.Picture_Click);
             // 
             // Field7
             // 
@@ -147,7 +147,7 @@ namespace Kolko_i_krzyżyk
             this.Field7.Size = new System.Drawing.Size(100, 100);
             this.Field7.TabIndex = 8;
             this.Field7.TabStop = false;
-            this.Field7.Click += new System.EventHandler(this.Field7_Click);
+            this.Field7.Click += new System.EventHandler(this.Picture_Click);
             // 
             // Field8
             // 
@@ -157,7 +157,7 @@ namespace Kolko_i_krzyżyk
             this.Field8.Size = new System.Drawing.Size(100, 100);
             this.Field8.TabIndex = 9;
             this.Field8.TabStop = false;
-            this.Field8.Click += new System.EventHandler(this.Field8_Click);
+            this.Field8.Click += new System.EventHandler(this.Picture_Click);
             // 
             // Field9
             // 
@@ -167,7 +167,7 @@ namespace Kolko_i_krzyżyk
             this.Field9.Size = new System.Drawing.Size(100, 100);
             this.Field9.TabIndex = 10;
             this.Field9.TabStop = false;
-            this.Field9.Click += new System.EventHandler(this.Field9_Click);
+            this.Field9.Click += new System.EventHandler(this.Picture_Click);
             // 
             // label1
             // 
@@ -222,6 +222,7 @@ namespace Kolko_i_krzyżyk
             this.Restart.TabIndex = 16;
             this.Restart.Text = "Zrestartuj gre";
             this.Restart.UseVisualStyleBackColor = true;
+            this.Restart.Click += new System.EventHandler(this.Restart_Click);
             // 
             // Plansza
             // 

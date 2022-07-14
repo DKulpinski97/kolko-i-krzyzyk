@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows.Forms;
+using Kolko_i_krzyżyk;
 
 namespace Kolko_i_krzyżyk.Control
 {
@@ -21,7 +22,7 @@ namespace Kolko_i_krzyżyk.Control
             }
 
         }
-        public void ChangeInformationInBoardOffields(int Field, Game game)
+        public void ChangeInformationInBoardOfFields(int Field, Game game)
         {
             if (game.player == false)
             {
@@ -33,6 +34,10 @@ namespace Kolko_i_krzyżyk.Control
                 game.board[Field - 1] = 'O';
                 game.player = false;
             }
+
+        }
+        public void RestartFields()
+        {
 
         }
     }

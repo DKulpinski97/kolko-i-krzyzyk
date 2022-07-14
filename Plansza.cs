@@ -35,12 +35,18 @@ namespace Kolko_i_krzyżyk
             Application.Exit();
         }
 
-        private void Field1_Click(object sender, EventArgs e)
+        private void Picture_Click(object sender, EventArgs e)
         {
-            controlGame.GameType(game, 1, Field1);
+            if (sender is PictureBox)
+            {
+                //MessageBox.Show("clicked on: " + ((PictureBox)sender).Name);
+            }
+            string tmp = ((PictureBox)sender).Name;
+            int a = Convert.ToInt32( tmp[tmp.Length-1]);
+            controlGame.GameType(game, 1, (PictureBox)sender);
 
         }
-
+/*
         private void Field2_Click(object sender, EventArgs e)
         {
             controlGame.GameType(game, 2, Field2);
@@ -79,6 +85,12 @@ namespace Kolko_i_krzyżyk
         private void Field9_Click(object sender, EventArgs e)
         {
             controlGame.GameType(game, 9, Field9);
+        }
+        */
+        private void Restart_Click(object sender, EventArgs e)
+        {
+            ChangeField changeField = new ChangeField();
+            changeField.RestartFields();
         }
     }
 }

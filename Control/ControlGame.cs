@@ -22,7 +22,7 @@ namespace Kolko_i_krzyżyk.Control
             if (game.board[field - 1] == '\0')
             {
                 changeField.ChangeImage(pictureBox, game);
-                changeField.ChangeInformationInBoardOffields(field, game);
+                changeField.ChangeInformationInBoardOfFields(field, game);
             }
             else
             {
