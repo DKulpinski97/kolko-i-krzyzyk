@@ -4,14 +4,15 @@ using System.Text;
 
 namespace Kolko_i_krzyżyk.ObiectGame
 {
-    class Game
+    public class Game
     {
-        public char [] Board = new char [9];
+        public char [] board = new char [9];
         //By zaoszczędzić miejsce urzyłem typu bool do wskazywania gracza
-        public bool Player = false;
-        public int[] Result = { 10, 20 };
+        public bool player = false;
+        public int[] result = { 0, 0 };
+        public bool computer;
 
-        
-        
+
+
     }
 }
