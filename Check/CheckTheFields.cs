@@ -42,6 +42,39 @@ namespace Kolko_i_krzyżyk.Check
                 }
             }
         }
+
+        public void CheckRow(Game game, VisibleObjects visibleObjects)
+        {
+            int tmp = 0;
+            char symbol='\0';
+            if(game.board[0] != '\0')
+            {
+                symbol = game.board[0];
+            }
+            for(int i=0;i<9;i++)
+            {
+                if(game.board[i]!='\0'&& symbol== game.board[i])
+                {
+                    tmp++;
+                }
+                if( i==2 || i==5 || i==8 )
+                {
+                    if(tmp==3)
+                    {
+                        WriteTheWinner(game, symbol);
+                        ChangeField changeField = new ChangeField();
+                        changeField.RestartFields(visibleObjects, game);
+                        break;
+                    }
+                    tmp = 0;
+                    symbol = '\0';
+                    if (i + 1 < 9 && game.board[i+1]!='\0' )
+                    {
+                        symbol = game.board[i + 1];
+                    }
+                }
+            }
+        }
         private void WriteTheWinner(Game game,char symbol)
         {
             if(symbol=='X')

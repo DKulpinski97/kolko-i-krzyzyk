@@ -26,6 +26,7 @@ namespace Kolko_i_krzyżyk.Control
                 changeField.ChangeImage(pictureBox, game);
                 changeField.ChangeInformationInBoardOfFields(field, game);
                 checkTheFields.CheckColumns(game, visibleObjects);
+                checkTheFields.CheckRow(game, visibleObjects);
             }
             else
             {
