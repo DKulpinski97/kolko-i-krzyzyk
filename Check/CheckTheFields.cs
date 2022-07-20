@@ -121,6 +121,32 @@ namespace Kolko_i_krzyżyk.Check
                 changeField.RestartFields(visibleObjects, game);
             }
         }
+        public bool CheckHowMenyFieldUse(Game game)
+        {
+            int tmp = 0;
+            for (int i = 0; i < 3; i++)
+            {
+                for (int j = 0; j < 3; j++)
+                {
+                    if (game.board[i, j] != '\0')
+                    {
+                        tmp++;
+                    }
+                    else
+                    {
+                        break;
+                    }
+                }
+            }
+            if (tmp == 9)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
+        }
         private void WriteTheWinner(Game game,char symbol)
         {
             if(symbol=='X')
